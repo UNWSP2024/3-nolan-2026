@@ -10,7 +10,6 @@
 # If the person is at least 20 years old, it should display "adult".
 
 def categorize_age(age):
-    ageCategory = "TBD"
 
     if age <= 1:
         ageCategory = "infant"
