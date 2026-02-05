@@ -7,7 +7,7 @@
 # If the person is 1 year old or less, it should display "infant" (without quotes).
 # If the person is older than 1 year, but younger than 13 years, it should display "child".
 # If the person is at least 13 years old, but less than 20 years old, it should display "teenager".
-# If the person is at least 20 years old, it should display "adult".
+# If the person is at least 20 year old, it should display "adult".
 
 def categorize_age(age):
     ageCategory = "TBD"
