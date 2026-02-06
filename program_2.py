@@ -1,3 +1,7 @@
+# By Nolan Nelsen
+# Written on 2/5/2026
+# Age Classifier
+
 # Write a program that asks the user to enter a person's age.  The program should display a message indicating whether the person is an infant, a child, a teenager, or an adult.  Following are the guidelines:
 
 # If the person is 1 year old or less, it should display "infant" (without quotes).
@@ -7,6 +11,18 @@
 
 def categorize_age(age):
     ageCategory = "TBD"
+    
+    if age <= 1:
+        ageCategory = "infant"
+    else:
+        if 1 < age < 13:
+            ageCategory = "child"
+        else:
+            if 13 <= age < 20:
+                ageCategory = "teenager"
+            else:
+                if age >= 20:
+                    ageCategory = "adult"
     ######################
     # WRITE YOUR CODE HERE
     ######################
@@ -16,7 +32,7 @@ def categorize_age(age):
 
 
 #### This piece of the code has been done for you,
-#### you only need to worry about the actual shipping 
+#### you only need to worry about the actual shipping
 #### charge logic in the weight_conversion function
 if __name__ == '__main__':
     # Local variables
